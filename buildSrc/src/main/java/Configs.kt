@@ -21,21 +21,21 @@ object Configs {
     const val AndroidJunitRunner = "androidx.test.runner.AndroidJUnitRunner"
     val FreeCompilerArgs = listOf(
         "-Xjvm-default=all",
-        "-Xopt-in=kotlin.RequiresOptIn",
-        "-Xopt-in=kotlinx.coroutines.ExperimentalCoroutinesApi",
-        "-Xopt-in=kotlinx.coroutines.InternalCoroutinesApi",
-        "-Xopt-in=kotlinx.coroutines.FlowPreview",
-        "-Xopt-in=androidx.compose.material.ExperimentalMaterialApi",
-        "-Xopt-in=com.google.accompanist.navigation.material.ExperimentalMaterialNavigationApi",
-        "-Xopt-in=androidx.compose.animation.ExperimentalAnimationApi"
+        "-opt-in=kotlin.RequiresOptIn",
+        "-opt-in=kotlinx.coroutines.ExperimentalCoroutinesApi",
+        "-opt-in=kotlinx.coroutines.InternalCoroutinesApi",
+        "-opt-in=kotlinx.coroutines.FlowPreview",
+        "-opt-in=androidx.compose.material.ExperimentalMaterialApi",
+        "-opt-in=com.google.accompanist.navigation.material.ExperimentalMaterialNavigationApi",
+        "-opt-in=androidx.compose.animation.ExperimentalAnimationApi"
     )
 
     val FreeCoroutineCompilerArgs = listOf(
         "-Xjvm-default=all",
-        "-Xopt-in=kotlin.RequiresOptIn",
-        "-Xopt-in=kotlinx.coroutines.ExperimentalCoroutinesApi",
-        "-Xopt-in=kotlinx.coroutines.InternalCoroutinesApi",
-        "-Xopt-in=kotlinx.coroutines.FlowPreview"
+        "-opt-in=kotlin.RequiresOptIn",
+        "-opt-in=kotlinx.coroutines.ExperimentalCoroutinesApi",
+        "-opt-in=kotlinx.coroutines.InternalCoroutinesApi",
+        "-opt-in=kotlinx.coroutines.FlowPreview"
     )
 
     object Release {

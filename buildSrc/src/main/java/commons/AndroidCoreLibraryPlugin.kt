@@ -54,10 +54,10 @@ class AndroidCoreLibraryPlugin : Plugin<Project> {
                 jvmTarget = JavaVersion.VERSION_11.toString()
                 freeCompilerArgs = listOf(
                     "-Xjvm-default=all",
-                    "-Xopt-in=kotlin.RequiresOptIn",
-                    "-Xopt-in=kotlinx.coroutines.ExperimentalCoroutinesApi",
-                    "-Xopt-in=kotlinx.coroutines.InternalCoroutinesApi",
-                    "-Xopt-in=kotlinx.coroutines.FlowPreview"
+                    "-opt-in=kotlin.RequiresOptIn",
+                    "-opt-in=kotlinx.coroutines.ExperimentalCoroutinesApi",
+                    "-opt-in=kotlinx.coroutines.InternalCoroutinesApi",
+                    "-opt-in=kotlinx.coroutines.FlowPreview"
                 )
             }
         }
