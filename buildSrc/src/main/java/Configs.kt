@@ -22,7 +22,6 @@ object Configs {
     val FreeCompilerArgs = listOf(
         "-Xjvm-default=all",
         "-Xopt-in=kotlin.RequiresOptIn",
-        "-Xopt-in=kotlin.Experimental",
         "-Xopt-in=kotlinx.coroutines.ExperimentalCoroutinesApi",
         "-Xopt-in=kotlinx.coroutines.InternalCoroutinesApi",
         "-Xopt-in=kotlinx.coroutines.FlowPreview",
@@ -34,7 +33,6 @@ object Configs {
     val FreeCoroutineCompilerArgs = listOf(
         "-Xjvm-default=all",
         "-Xopt-in=kotlin.RequiresOptIn",
-        "-Xopt-in=kotlin.Experimental",
         "-Xopt-in=kotlinx.coroutines.ExperimentalCoroutinesApi",
         "-Xopt-in=kotlinx.coroutines.InternalCoroutinesApi",
         "-Xopt-in=kotlinx.coroutines.FlowPreview"

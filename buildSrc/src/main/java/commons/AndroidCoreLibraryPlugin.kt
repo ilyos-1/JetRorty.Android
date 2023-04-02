@@ -57,8 +57,7 @@ class AndroidCoreLibraryPlugin : Plugin<Project> {
                     "-Xopt-in=kotlin.RequiresOptIn",
                     "-Xopt-in=kotlinx.coroutines.ExperimentalCoroutinesApi",
                     "-Xopt-in=kotlinx.coroutines.InternalCoroutinesApi",
-                    "-Xopt-in=kotlinx.coroutines.FlowPreview",
-                    "-Xopt-in=kotlin.Experimental"
+                    "-Xopt-in=kotlinx.coroutines.FlowPreview"
                 )
             }
         }
