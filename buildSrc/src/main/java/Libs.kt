@@ -62,7 +62,7 @@ object NetworkLib {
     const val Retrofit = "com.squareup.retrofit2:retrofit:2.9.0"
     const val RetrofitMoshi = "com.squareup.retrofit2:converter-moshi:2.9.0"
     const val Okhttp = "com.squareup.okhttp3:okhttp:5.0.0-alpha.11"
-    const val LoggingInterceptor = "com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.1"
+    const val LoggingInterceptor = "com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.11"
     const val ChuckerDebug = "com.github.chuckerteam.chucker:library:3.5.2"
     const val ChuckerRelease = "com.github.chuckerteam.chucker:library-no-op:3.5.2"
 
