@@ -24,8 +24,10 @@ import com.developersancho.theme.JetRortyColors
 import com.developersancho.theme.JetRortyTheme
 import com.developersancho.theme.R
 import com.ramcosta.composedestinations.annotation.Destination
+import com.ramcosta.composedestinations.annotation.RootNavGraph
 
-@Destination(start = true)
+@RootNavGraph(start = true)
+@Destination
 @Composable
 fun EpisodeDetailScreen(
     id: Int = 0,

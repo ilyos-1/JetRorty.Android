@@ -20,12 +20,14 @@ import com.developersancho.framework.base.mvi.BaseViewState
 import com.developersancho.framework.extension.cast
 import com.developersancho.locations.detail.view.LocationDetailContent
 import com.developersancho.provider.NavigationProvider
-import com.developersancho.theme.R
 import com.developersancho.theme.JetRortyColors
 import com.developersancho.theme.JetRortyTheme
+import com.developersancho.theme.R
 import com.ramcosta.composedestinations.annotation.Destination
+import com.ramcosta.composedestinations.annotation.RootNavGraph
 
-@Destination(start = true)
+@RootNavGraph(start = true)
+@Destination
 @Composable
 fun LocationDetailScreen(
     id: Int = 0,
