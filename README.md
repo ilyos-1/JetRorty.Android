@@ -1,7 +1,7 @@
 [![CodeStyle](https://img.shields.io/badge/code%20style-%E2%9D%A4-FF4081.svg?style=for-the-badge)](https://ktlint.github.io/)
-[![Compose](https://img.shields.io/badge/compose-1.1.0-red.svg?style=for-the-badge)](https://developer.android.com/jetpack/compose)
-[![Kotlin](https://img.shields.io/badge/kotlin-1.6.10-blueviolet.svg?style=for-the-badge)](https://kotlinlang.org/)
-[![Android API](https://img.shields.io/badge/api-23%2B-brightgreen.svg?style=for-the-badge)](https://android-arsenal.com/api?level=23)
+[![Compose](https://img.shields.io/badge/compose-1.4.1-red.svg?style=for-the-badge)](https://developer.android.com/jetpack/compose)
+[![Kotlin](https://img.shields.io/badge/kotlin-1.8.0-blueviolet.svg?style=for-the-badge)](https://kotlinlang.org/)
+[![Android API](https://img.shields.io/badge/api-26%2B-brightgreen.svg?style=for-the-badge)](https://android-arsenal.com/api?level=26)
 [![Gradle](https://img.shields.io/badge/gradle-7.4.2-blue.svg?style=for-the-badge)](https://lv.binarybabel.org/catalog/gradle/latest)
 [![License Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-orange.svg?style=for-the-badge)](https://opensource.org/licenses/Apache-2.0)
 
@@ -156,7 +156,7 @@ This project uses many of the popular libraries, plugins and tools of the androi
   
 - [Accompanist](https://google.github.io/accompanist)
   
-    - [Systemuicontroller](https://google.github.io/accompanist/systemuicontroller/) - System UI Controller provides easy-to-use utilities for updating the System UI bar colors within Jetpack Compose.
+    - [System UI Controller](https://google.github.io/accompanist/systemuicontroller/) - System UI Controller provides easy-to-use utilities for updating the System UI bar colors within Jetpack Compose.
     - [Insets](https://google.github.io/accompanist/insets/) - Insets for Jetpack Compose takes a lot of the ideas which drove Insetter for views, and applies them for use in composables.
     - [Placeholder](https://google.github.io/accompanist/placeholder/) - A library which provides a modifier for display 'placeholder' UI while content is loading.
     - [Navigation](https://google.github.io/accompanist/navigation-material/) - A library which provides Compose Material support for Jetpack Navigation Compose. This features composable bottom sheet destinations.
