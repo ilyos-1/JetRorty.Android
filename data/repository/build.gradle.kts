@@ -1,4 +1,9 @@
-import extensions.*
+import extensions.FRAMEWORK
+import extensions.LOCAL
+import extensions.MODEL
+import extensions.REMOTE
+import extensions.implementation
+import extensions.kapt
 
 plugins {
     id("commons.android-library")
@@ -18,6 +23,11 @@ dependencies {
 
     implementation(StorageLib.DatastorePref)
 }
+
+kotlin {
+    jvmToolchain(11)
+}
+
 android {
     namespace = "com.developersancho.repository"
 }

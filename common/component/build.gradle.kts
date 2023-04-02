@@ -10,6 +10,11 @@ dependencies {
     THEME
     JETFRAMEWORK
 }
+
+kotlin {
+    jvmToolchain(11)
+}
+
 android {
     namespace = "com.developersancho.component"
 }

@@ -1,4 +1,13 @@
-import extensions.*
+import extensions.COMPONENT
+import extensions.DOMAIN
+import extensions.FRAMEWORK
+import extensions.JETFRAMEWORK
+import extensions.MODEL
+import extensions.PROVIDER
+import extensions.THEME
+import extensions.addNavigationDependencies
+import extensions.implementation
+import extensions.kapt
 
 plugins {
     id("commons.android-feature")
@@ -32,6 +41,11 @@ dependencies {
     implementation(SupportLib.Paging)
     implementation(ComposeLib.Paging)
 }
+
+kotlin {
+    jvmToolchain(11)
+}
+
 android {
     namespace = "com.developersancho.characters"
 }

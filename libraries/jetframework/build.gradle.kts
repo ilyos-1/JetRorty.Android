@@ -3,6 +3,10 @@ plugins {
     id("org.jetbrains.kotlin.android")
 }
 
+kotlin {
+    jvmToolchain(11)
+}
+
 android {
     compileSdk = Configs.CompileSdk
 

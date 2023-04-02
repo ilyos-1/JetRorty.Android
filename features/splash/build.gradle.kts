@@ -1,4 +1,8 @@
-import extensions.*
+import extensions.DOMAIN
+import extensions.FRAMEWORK
+import extensions.addCommonDependencies
+import extensions.implementation
+import extensions.kapt
 
 plugins {
     id("commons.android-library")
@@ -16,6 +20,11 @@ dependencies {
     implementation(DaggerHiltLib.Android)
     kapt(DaggerHiltLib.Compiler)
 }
+
+kotlin {
+    jvmToolchain(11)
+}
+
 android {
     namespace = "com.developersancho.splash"
 }

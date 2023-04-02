@@ -1,4 +1,11 @@
-import extensions.*
+import extensions.COMPONENT
+import extensions.FEATURE_CHARACTERS
+import extensions.FEATURE_EPISODES
+import extensions.FEATURE_LOCATIONS
+import extensions.FEATURE_SETTINGS
+import extensions.PROVIDER
+import extensions.THEME
+import extensions.addNavigationDependencies
 
 plugins {
     id("commons.android-feature")
@@ -23,6 +30,11 @@ dependencies {
 
     addNavigationDependencies()
 }
+
+kotlin {
+    jvmToolchain(11)
+}
+
 android {
     namespace = "com.developersancho.home"
 }

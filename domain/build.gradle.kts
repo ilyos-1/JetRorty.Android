@@ -1,4 +1,10 @@
-import extensions.*
+import extensions.FRAMEWORK
+import extensions.LOCAL
+import extensions.MODEL
+import extensions.REMOTE
+import extensions.REPOSITORY
+import extensions.implementation
+import extensions.kapt
 
 plugins {
     id("commons.android-library")
@@ -19,6 +25,11 @@ dependencies {
     // Paging
     implementation(SupportLib.Paging)
 }
+
+kotlin {
+    jvmToolchain(11)
+}
+
 android {
     namespace = "com.developersancho.domain"
 }
