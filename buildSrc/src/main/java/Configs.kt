@@ -27,7 +27,8 @@ object Configs {
         "-opt-in=kotlinx.coroutines.FlowPreview",
         "-opt-in=androidx.compose.material.ExperimentalMaterialApi",
         "-opt-in=com.google.accompanist.navigation.material.ExperimentalMaterialNavigationApi",
-        "-opt-in=androidx.compose.animation.ExperimentalAnimationApi"
+        "-opt-in=androidx.compose.animation.ExperimentalAnimationApi",
+        "-opt-in=androidx.compose.foundation.layout.ExperimentalLayoutApi"
     )
 
     val FreeCoroutineCompilerArgs = listOf(

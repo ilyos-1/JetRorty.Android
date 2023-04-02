@@ -1,9 +1,13 @@
 package com.developersancho.component
 
 import androidx.compose.animation.core.animateDpAsState
+import androidx.compose.foundation.layout.ExperimentalLayoutApi
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.ime
+import androidx.compose.foundation.layout.isImeVisible
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
@@ -57,13 +61,14 @@ fun ExtraLargeSpacer() = Spacer(
 /**
  * Spacer that has a height of a software keyboard
  */
+@OptIn(ExperimentalLayoutApi::class)
 @Composable
 fun KeyboardSpacer(
     modifier: Modifier = Modifier,
     confirmHeight: (Dp) -> Dp = { it },
 ) {
-    val imeVisible = LocalWindowInsets.current.ime.isVisible
-    val imeHeight = with(LocalDensity.current) { LocalWindowInsets.current.ime.bottom.toDp() }
+    val imeVisible = WindowInsets.isImeVisible
+    val imeHeight = with(LocalDensity.current) { WindowInsets.ime.getBottom(LocalDensity.current).toDp() }
     val height by animateDpAsState(if (imeVisible) confirmHeight(imeHeight) else 0.dp)
     Spacer(modifier.height(height))
 }
