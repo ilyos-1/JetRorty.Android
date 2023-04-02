@@ -23,14 +23,14 @@ gradlePlugin {
 
 object Versions {
     const val GRADLE = "7.4.2"
-    const val KOTLIN = "1.6.10"
-    const val HILT = "2.41"
-    const val GOOGLE_SERVICE = "4.3.10"
-    const val CRASHLYTICS = "2.8.1"
-    const val VERSION_CHECKER = "0.42.0"
-    const val KTLINT = "10.2.1"
-    const val SPOTLESS = "6.4.2"
-    const val DETEKT = "1.20.0-RC2"
+    const val KOTLIN = "1.8.0"
+    const val HILT = "2.45"
+    const val GOOGLE_SERVICE = "4.3.15"
+    const val CRASHLYTICS = "2.9.4"
+    const val VERSION_CHECKER = "0.46.0"
+    const val KTLINT = "11.3.1"
+    const val SPOTLESS = "6.17.0"
+    const val DETEKT = "1.22.0"
 }
 
 object Deps {

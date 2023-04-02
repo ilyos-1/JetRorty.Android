@@ -3,10 +3,10 @@ package commons
 import com.android.build.api.dsl.BuildType
 import extensions.addCommonDependencies
 import extensions.addTestDependencies
-import gradle.kotlin.dsl.accessors._70a97011e3215fd55f57ff723d5c332c.android
-import gradle.kotlin.dsl.accessors._70a97011e3215fd55f57ff723d5c332c.kotlin
-import gradle.kotlin.dsl.accessors._70a97011e3215fd55f57ff723d5c332c.kotlinOptions
-import gradle.kotlin.dsl.accessors._70a97011e3215fd55f57ff723d5c332c.sourceSets
+import gradle.kotlin.dsl.accessors._5c8c6bc9348d2bc79fb6ce061d552d81.android
+import gradle.kotlin.dsl.accessors._5c8c6bc9348d2bc79fb6ce061d552d81.kotlin
+import gradle.kotlin.dsl.accessors._5c8c6bc9348d2bc79fb6ce061d552d81.kotlinOptions
+import gradle.kotlin.dsl.accessors._5c8c6bc9348d2bc79fb6ce061d552d81.sourceSets
 import org.gradle.api.JavaVersion
 import org.gradle.kotlin.dsl.dependencies
 import java.io.File
