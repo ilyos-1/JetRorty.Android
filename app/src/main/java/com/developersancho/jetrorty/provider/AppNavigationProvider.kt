@@ -8,34 +8,34 @@ import com.developersancho.provider.NavigationProvider
 import com.developersancho.settings.destinations.AboutScreenDestination
 import com.developersancho.settings.destinations.LanguageScreenDestination
 import com.developersancho.settings.destinations.TermsAndPrivacyScreenDestination
-import com.ramcosta.composedestinations.navigation.navigateTo
+import com.ramcosta.composedestinations.navigation.navigate
 
 class AppNavigationProvider constructor(
     private val navController: NavController
 ) : NavigationProvider {
 
     override fun openCharacterDetail(characterId: Int) {
-        navController.navigateTo(CharacterDetailScreenDestination(characterId))
+        navController.navigate(CharacterDetailScreenDestination(characterId))
     }
 
     override fun openEpisodeDetail(episodeId: Int) {
-        navController.navigateTo(EpisodeDetailScreenDestination(episodeId))
+        navController.navigate(EpisodeDetailScreenDestination(episodeId))
     }
 
     override fun openLocationDetail(locationId: Int) {
-        navController.navigateTo(LocationDetailScreenDestination(locationId))
+        navController.navigate(LocationDetailScreenDestination(locationId))
     }
 
     override fun openTermAndPrivacy() {
-        navController.navigateTo(TermsAndPrivacyScreenDestination)
+        navController.navigate(TermsAndPrivacyScreenDestination)
     }
 
     override fun openAppLanguage() {
-        navController.navigateTo(LanguageScreenDestination)
+        navController.navigate(LanguageScreenDestination)
     }
 
     override fun openAbout() {
-        navController.navigateTo(AboutScreenDestination)
+        navController.navigate(AboutScreenDestination)
     }
 
     override fun navigateUp() {
