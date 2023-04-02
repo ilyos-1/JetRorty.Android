@@ -8,9 +8,7 @@ import android.content.ContextWrapper
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ShareCompat
-import androidx.fragment.app.Fragment
 
 inline fun <reified T : Any> Activity.launchActivity(
     requestCode: Int = -1,
@@ -112,7 +110,7 @@ fun Context.shareApplication() {
     val appPackageName = packageName
 
     val shareIntent = getActivity()?.let {
-        ShareCompat.IntentBuilder.from(it)
+        ShareCompat.IntentBuilder(it)
             .setType("text/plain")
             .setText(
                 "https://play.google.com/store/apps/details?id=$appPackageName"
@@ -151,13 +149,13 @@ fun Context.openAppOnAppGallery() {
             )
         )
     } catch (ex: ActivityNotFoundException) {
-        val url = "https://appgallery.cloud.huawei.com/marketshare/app/C102867981"
+        // val url = "https://appgallery.cloud.huawei.com/marketshare/app/C102867981"
         val url2 = "https://appgallery8.huawei.com/#/app/C102867981"
         startActivity(
             Intent(
                 Intent.ACTION_VIEW,
                 Uri.parse(
-                    ("https://appgallery8.huawei.com/#/app/C102867981")
+                    (url2)
                 )
             )
         )
