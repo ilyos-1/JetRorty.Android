@@ -89,12 +89,12 @@ object FirebaseLib {
 }
 
 object HuaweiLib {
-    const val Core = "com.huawei.agconnect:agconnect-core:1.6.4.300"
-    const val Base = "com.huawei.hms:base:6.3.0.300"
-    const val Analytic = "com.huawei.hms:hianalytics:6.3.2.300"
-    const val Crashlytics = "com.huawei.agconnect:agconnect-crash:1.6.0.300"
-    const val Push = "com.huawei.hms:push:6.1.0.300"
-    const val Config = "com.huawei.agconnect:agconnect-remoteconfig:1.6.4.300"
+    const val Core = "com.huawei.agconnect:agconnect-core:1.8.1.300"
+    const val Base = "com.huawei.hms:base:6.6.0.300"
+    const val Analytic = "com.huawei.hms:hianalytics:6.10.0.300"
+    const val Crashlytics = "com.huawei.agconnect:agconnect-crash:1.8.1.300"
+    const val Push = "com.huawei.hms:push:6.9.0.300"
+    const val Config = "com.huawei.agconnect:agconnect-remoteconfig:1.8.1.300"
 }
 
 object DaggerHiltLib {
