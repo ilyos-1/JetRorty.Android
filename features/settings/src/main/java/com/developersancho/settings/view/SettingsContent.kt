@@ -59,7 +59,7 @@ fun SettingsContent(
                     .padding(16.dp)
             ) {
                 val (
-                    lblThemeMode, switchThemeMode,
+                    lblThemeMode,
                     viewDivider1,
                     lblRateApp,
                     viewDivider2,
@@ -74,31 +74,34 @@ fun SettingsContent(
                     lblAppVersion, tvAppVersion
                 ) = createRefs()
 
-                Text(
-                    text = stringResource(id = R.string.text_theme_mode),
-                    style = JetRortyTypography.body2,
-                    modifier = Modifier.constrainAs(lblThemeMode) {
-                        top.linkTo(parent.top)
-                        start.linkTo(parent.start)
-                    }
-                )
+                Row(
+                    modifier = Modifier
+                        .constrainAs(lblThemeMode) {
+                            top.linkTo(parent.top)
+                            start.linkTo(parent.start)
+                        }
+                ) {
+                    Text(
+                        text = stringResource(id = R.string.text_theme_mode),
+                        style = JetRortyTypography.body2,
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .weight(1f)
+                            .align(Alignment.CenterVertically)
+                    )
 
-                AndroidView(
-                    factory = { context ->
-                        ThemeSwitch(context).apply {
-                            isChecked = checkedState.value
-                            setOnCheckedChangeListener { _, isChecked ->
-                                checkedState.value = isChecked
-                                viewModel.saveThemeMode(isChecked)
+                    AndroidView(
+                        factory = { context ->
+                            ThemeSwitch(context).apply {
+                                isChecked = checkedState.value
+                                setOnCheckedChangeListener { _, isChecked ->
+                                    checkedState.value = isChecked
+                                    viewModel.saveThemeMode(isChecked)
+                                }
                             }
                         }
-                    },
-                    modifier = Modifier.constrainAs(switchThemeMode) {
-                        top.linkTo(lblThemeMode.top)
-                        bottom.linkTo(lblThemeMode.bottom)
-                        end.linkTo(parent.end)
-                    }
-                )
+                    )
+                }
 
                 JRDivider(
                     modifier = Modifier
