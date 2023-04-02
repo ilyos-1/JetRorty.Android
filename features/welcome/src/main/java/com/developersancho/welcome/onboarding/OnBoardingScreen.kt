@@ -1,9 +1,13 @@
 package com.developersancho.welcome.onboarding
 
 import androidx.compose.animation.AnimatedVisibility
+import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.pager.HorizontalPager
+import androidx.compose.foundation.pager.PagerState
+import androidx.compose.foundation.pager.rememberPagerState
 import androidx.compose.material.Button
 import androidx.compose.material.ButtonDefaults
 import androidx.compose.material.Text
@@ -24,9 +28,10 @@ import com.developersancho.framework.extension.getActivity
 import com.developersancho.framework.extension.launchActivity
 import com.developersancho.theme.*
 import com.developersancho.theme.R
-import com.google.accompanist.pager.*
+import com.google.accompanist.pager.ExperimentalPagerApi
+import com.google.accompanist.pager.HorizontalPagerIndicator
 
-@OptIn(ExperimentalPagerApi::class)
+@OptIn(ExperimentalFoundationApi::class, ExperimentalPagerApi::class)
 @Composable
 fun OnBoardingScreen(viewModel: OnBoardingViewModel = hiltViewModel()) {
     val context = LocalContext.current
@@ -44,7 +49,7 @@ fun OnBoardingScreen(viewModel: OnBoardingViewModel = hiltViewModel()) {
     ) {
         HorizontalPager(
             modifier = Modifier.weight(10f),
-            count = pages.count(),
+            pageCount = pages.count(),
             state = pagerState,
             verticalAlignment = Alignment.Top
         ) { position ->
@@ -55,6 +60,7 @@ fun OnBoardingScreen(viewModel: OnBoardingViewModel = hiltViewModel()) {
                 .align(Alignment.CenterHorizontally)
                 .weight(1f),
             pagerState = pagerState,
+            pageCount = pages.count(),
             activeColor = colorResource(R.color.red_700)
         )
         FinishButton(
@@ -110,7 +116,7 @@ fun PagerScreen(onBoardingPage: OnBoardingPage) {
     }
 }
 
-@OptIn(ExperimentalPagerApi::class)
+@OptIn(ExperimentalFoundationApi::class)
 @Composable
 fun FinishButton(
     modifier: Modifier,
