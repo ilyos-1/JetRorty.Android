@@ -75,7 +75,6 @@ dependencies {
     implementation("com.airbnb.android:lottie-compose:5.0.3")
 
     // Accompanist
-    implementation("com.google.accompanist:accompanist-swiperefresh:0.23.1")
     implementation("com.google.accompanist:accompanist-systemuicontroller:0.23.1")
     implementation("com.google.accompanist:accompanist-insets:0.23.1")
     implementation("com.google.accompanist:accompanist-placeholder-material:0.23.1")

@@ -45,7 +45,6 @@ object NavigationLib {
 }
 
 object AccompanistLib {
-    const val Swiperefresh = "com.google.accompanist:accompanist-swiperefresh:0.30.0"
     const val Systemuicontroller = "com.google.accompanist:accompanist-systemuicontroller:0.30.0"
     const val Insets = "com.google.accompanist:accompanist-insets:0.30.0"
     const val PlaceholderMaterial = "com.google.accompanist:accompanist-placeholder-material:0.30.0"

@@ -1,8 +1,17 @@
 package extensions
 
+import AccompanistLib
+import AndroidTestingLib
+import ComposeLib
+import FirebaseLib
+import HuaweiLib
+import NavigationLib
+import NetworkLib
+import StorageLib
+import SupportLib
+import TestingLib
 import org.gradle.api.artifacts.Dependency
 import org.gradle.api.artifacts.dsl.DependencyHandler
-import org.gradle.kotlin.dsl.project
 
 /**
  * Adds a dependency to the `releaseImplementation` configuration.
@@ -115,7 +124,6 @@ fun DependencyHandler.addComposeDependencies() {
     implementation(ComposeLib.Coil)
 
     // Accompanist
-    implementation(AccompanistLib.Swiperefresh)
     implementation(AccompanistLib.Systemuicontroller)
     implementation(AccompanistLib.Insets)
     implementation(AccompanistLib.PlaceholderMaterial)
