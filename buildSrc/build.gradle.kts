@@ -22,7 +22,7 @@ gradlePlugin {
 }
 
 object Versions {
-    const val GRADLE = "7.1.3"
+    const val GRADLE = "7.4.2"
     const val KOTLIN = "1.6.10"
     const val HILT = "2.41"
     const val GOOGLE_SERVICE = "4.3.10"
