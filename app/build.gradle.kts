@@ -1,4 +1,15 @@
-import extensions.*
+import extensions.addCommonDependencies
+import extensions.addComposeDependencies
+import extensions.addFirebaseDependencies
+import extensions.addHuaweiDependencies
+import extensions.addModuleDependencies
+import extensions.addNavigationDependencies
+import extensions.addNetworkDependencies
+import extensions.addStorageDependencies
+import extensions.addTestDependencies
+import extensions.implementation
+import extensions.kapt
+import extensions.setSigningConfigs
 
 plugins {
     id("com.android.application")
@@ -18,6 +29,10 @@ if (file("google-services.json").exists()) {
 
 if (file("agconnect-services.json").exists()) {
     apply(plugin = "com.huawei.agconnect")
+}
+
+kotlin {
+    jvmToolchain(11)
 }
 
 android {
