@@ -18,7 +18,7 @@ dependencyResolutionManagement {
         maven("https://developer.huawei.com/repo/")
     }
 }
-rootProject.name = "JetRortyV2"
+rootProject.name = "JetRortyV3"
 include(":app")
 include(":domain")
 include(":data:model")
