@@ -6,6 +6,7 @@ import android.annotation.SuppressLint
 import android.content.Context
 import android.content.pm.ApplicationInfo
 import android.content.pm.PackageManager
+import com.developersancho.framework.extension.getApplicationInfoCompat
 import com.google.android.gms.common.GoogleApiAvailability
 import com.huawei.hms.api.HuaweiApiAvailability
 import timber.log.Timber
@@ -46,7 +47,7 @@ object MobileService {
 
 
         val app: ApplicationInfo = context.packageManager
-            .getApplicationInfo(context.packageName, PackageManager.GET_META_DATA)
+            .getApplicationInfoCompat(context.packageName, PackageManager.GET_META_DATA)
         val bundle = app.metaData
 
         return if (gms && hms) {
