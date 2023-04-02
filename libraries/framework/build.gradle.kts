@@ -38,6 +38,7 @@ android {
             "-Xopt-in=kotlinx.coroutines.FlowPreview"
         )
     }
+    namespace = "com.developersancho.framework"
 }
 
 dependencies {

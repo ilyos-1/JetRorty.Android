@@ -18,3 +18,6 @@ dependencies {
 
     implementation(StorageLib.DatastorePref)
 }
+android {
+    namespace = "com.developersancho.repository"
+}

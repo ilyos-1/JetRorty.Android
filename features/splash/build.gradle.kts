@@ -16,3 +16,6 @@ dependencies {
     implementation(DaggerHiltLib.Android)
     kapt(DaggerHiltLib.Compiler)
 }
+android {
+    namespace = "com.developersancho.splash"
+}

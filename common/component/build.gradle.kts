@@ -10,3 +10,6 @@ dependencies {
     THEME
     JETFRAMEWORK
 }
+android {
+    namespace = "com.developersancho.component"
+}

@@ -19,3 +19,6 @@ dependencies {
     // Paging
     implementation(SupportLib.Paging)
 }
+android {
+    namespace = "com.developersancho.domain"
+}

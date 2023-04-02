@@ -18,3 +18,6 @@ dependencies {
     implementation(StorageLib.RoomKtx)
     ksp(StorageLib.RoomCompiler)
 }
+android {
+    namespace = "com.developersancho.model"
+}

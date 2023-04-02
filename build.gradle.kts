@@ -1,6 +1,6 @@
 buildscript {
     dependencies {
-        classpath("com.android.tools.build:gradle:7.1.3")
+        classpath("com.android.tools.build:gradle:7.4.2")
         classpath("com.huawei.agconnect:agcp:1.6.5.300")
     }
 }

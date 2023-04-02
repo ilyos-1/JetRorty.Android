@@ -32,3 +32,6 @@ dependencies {
     implementation(SupportLib.Paging)
     implementation(ComposeLib.Paging)
 }
+android {
+    namespace = "com.developersancho.locations"
+}

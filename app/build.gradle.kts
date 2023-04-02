@@ -88,6 +88,7 @@ android {
             isIncludeAndroidResources = true
         }
     }
+    namespace = "com.developersancho.jetrorty"
 }
 
 android.applicationVariants.all {

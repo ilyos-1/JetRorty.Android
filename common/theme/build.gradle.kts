@@ -6,3 +6,6 @@ plugins {
 dependencies {
     implementation(SupportLib.Splashscreen)
 }
+android {
+    namespace = "com.developersancho.theme"
+}

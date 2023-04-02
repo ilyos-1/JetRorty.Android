@@ -22,3 +22,6 @@ dependencies {
     kapt(DaggerHiltLib.Compiler)
     implementation(DaggerHiltLib.Compose)
 }
+android {
+    namespace = "com.developersancho.welcome"
+}

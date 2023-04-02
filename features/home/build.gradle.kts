@@ -23,3 +23,6 @@ dependencies {
 
     addNavigationDependencies()
 }
+android {
+    namespace = "com.developersancho.home"
+}
