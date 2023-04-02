@@ -35,7 +35,7 @@ fun Context.deviceId(): String {
 
 fun Context.appVersion(): String {
     return try {
-        packageManager.getPackageInfo(packageName, 0).versionName
+        packageManager.getPackageInfoCompat(packageName, 0).versionName
     } catch (ex: PackageManager.NameNotFoundException) {
         ""
     }
@@ -44,7 +44,7 @@ fun Context.appVersion(): String {
 @RequiresApi(Build.VERSION_CODES.P)
 fun Context.appVersionCode(): Long {
     return try {
-        packageManager.getPackageInfo(packageName, 0).longVersionCode
+        packageManager.getPackageInfoCompat(packageName, 0).longVersionCode
     } catch (ex: PackageManager.NameNotFoundException) {
         0L
     }
